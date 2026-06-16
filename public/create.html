@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write | Inkwell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo"><span></span>Inkwell</a>
+            
+            <ul class="nav-links">
+    <li class="dropdown">
+        <a href="index.html">Platform ▾</a>
+        <div class="dropdown-menu">
+            <a href="index.html">Home Feed</a>
+            <a href="dashboard.html">Creator Dashboard</a>
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="#">Topics ▾</a>
+        <div class="dropdown-menu">
+            <a href="category.html?tag=Artificial%20Intelligence">Artificial Intelligence</a>
+            <a href="category.html?tag=Software%20Engineering">Software Engineering</a>
+            <a href="category.html?tag=Computer%20Science">Computer Science</a>
+            <a href="category.html?tag=Technology%20Trends">Technology Trends</a>
+            </div>
+    </li>
+</ul>
+        </div>
+
+        <div class="nav-actions">
+            <a href="create.html" class="btn btn-accent">Start Writing</a>
+        </div>
+    </nav>
+
+    <div class="main-content" style="max-width: 800px; margin: 120px auto 100px; padding: 0 40px;">
+        <h1 id="page-title" style="font-size: 36px; font-weight: 800; margin-bottom: 30px; letter-spacing: -1px;">Draft New Record</h1>
+        
+        <form id="editor-form" style="background: var(--glass-bg); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--glass-border); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--glass-shadow);">
+            <input type="hidden" id="edit-id">
+            
+            <div class="form-group">
+                <label class="form-label">Paper Title</label>
+                <input type="text" id="post-title" class="form-control" required placeholder="A brilliant title...">
+            </div>
+            
+            <div style="display: flex; gap: 20px;">
+                <div class="form-group" style="flex: 1;">
+                    <label class="form-label">Author Name</label>
+                    <input type="text" id="post-author" class="form-control" required placeholder="John Doe">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label class="form-label">Domain Tag</label>
+                    <input type="text" id="post-tag" class="form-control" required placeholder="e.g., Science, Technology Trends...">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Content Body (Use double enters for paragraphs)</label>
+                <textarea id="post-body" class="form-control" rows="12" required style="resize: vertical; font-size: 16px; line-height: 1.6;" placeholder="Start writing..."></textarea>
+            </div>
+
+            <div style="text-align: right; margin-top: 30px;">
+                <a href="dashboard.html" class="btn btn-ghost" style="margin-right: 15px;">Cancel</a>
+                <button type="submit" class="btn btn-accent" style="font-size: 15px; padding: 12px 24px;">Publish to Database</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+  <p>Designed & built by <span>Arjit Singh</span> · 2026 · New Delhi, India</p>
+  <p style="margin-top: 8px; font-size: 11px; opacity: 0.6;">Styling & UI assisted by AI (Gemini, Claude, & Copilot)</p>
+</footer>
+
+    <script src="app.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', App.initFormSetup);</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics | Inkwell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo"><span></span>Inkwell</a>
+            <ul class="nav-links">
+    <li class="dropdown">
+        <a href="index.html">Platform ▾</a>
+        <div class="dropdown-menu">
+            <a href="index.html">Home Feed</a>
+            <a href="dashboard.html">Creator Dashboard</a>
+        </div>
+    </li>
+    
+    <li class="dropdown">
+        <a href="#">Topics ▾</a>
+        <div class="dropdown-menu">
+            <a href="category.html?tag=Artificial%20Intelligence">Artificial Intelligence</a>
+            <a href="category.html?tag=Software%20Engineering">Software Engineering</a>
+            <a href="category.html?tag=Computer%20Science">Computer Science</a>
+            <a href="category.html?tag=Technology%20Trends">Technology Trends</a>
+            </div>
+    </li>
+</ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="hero" style="text-align: left; padding-top: 160px; padding-bottom: 40px;">
+            <div class="hero-eyebrow" style="justify-content: flex-start;" id="cat-eyebrow">Exploring Topic</div>
+            <h1 id="cat-title" style="font-size: 56px;">Topic</h1>
+        </div>
+        <div class="posts-section" style="padding-top: 20px;">
+            <div class="posts-grid" id="category-grid">Fetching database records...</div>
+        </div>
+    </div>
+
+    <footer>
+  <p>Designed & built by <span>Arjit Singh</span> · 2026 · New Delhi, India</p>
+  <p style="margin-top: 8px; font-size: 11px; opacity: 0.6;">Styling & UI assisted by AI (Gemini, Claude, & Copilot)</p>
+</footer>
+
+    <script src="app.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', App.loadCategoryFeed);</script>
+</body>
+</html>

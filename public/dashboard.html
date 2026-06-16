@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Inkwell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-left"><a href="index.html" class="nav-logo"><span></span>Inkwell</a></div>
+        <div class="nav-actions"><a href="create.html" class="btn btn-accent">Publish Paper</a></div>
+    </nav>
+
+    <div class="main-content" style="max-width: 1000px; margin: 120px auto 100px; padding: 0 40px;">
+        <h1 style="font-size: 36px; margin-bottom: 30px;">Database Console</h1>
+        <div style="background: var(--glass-bg); backdrop-filter: var(--glass-blur); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); overflow: hidden;">
+            <table>
+                <thead><tr><th>Title</th><th>Author</th><th>Tag</th></tr></thead>
+                <tbody id="dashboard-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+  <p>Designed & built by <span>Arjit Singh</span> · 2026 · New Delhi, India</p>
+  <p style="margin-top: 8px; font-size: 11px; opacity: 0.6;">Styling & UI assisted by AI (Gemini, Claude, & Copilot)</p>
+</footer>
+
+    <script src="app.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', App.loadDashboard);</script>
+</body>
+</html>
