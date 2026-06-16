@@ -1,0 +1,12 @@
+blogging-platform/
+│
+├── server.js               (Node.js + Express Backend & SQLite Database Setup)
+├── package.json            (Project Dependencies Config)
+│
+└── public/                 (Frontend Directory)
+    ├── index.html          (Home Page - Feed of All Blogs)
+    ├── post.html           (Single Post View Page)
+    ├── dashboard.html      (Manage, Edit, and Delete Blogs Page)
+    ├── create.html         (Write and Publish New Blogs Page)
+    ├── style.css           (Global Glassmorphic Tech-Aesthetic Stylesheet)
+    └── app.js              (Frontend API Controller & Interactions Script)
